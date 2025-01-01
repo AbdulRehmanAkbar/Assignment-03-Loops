@@ -5,8 +5,14 @@
 // 12
 // 123
 // 1234
+import 'dart:io';
+
 void main() {
-  for (var i = 0; i < 5; i++) {
-    print();
+  int rows = 5;
+  for (var i = 1; i <= rows; i++) {
+    for (var col = 1; col < i; col++) {
+      stdout.write("$col");
+    }
+    stdout.writeln();
   }
 }
